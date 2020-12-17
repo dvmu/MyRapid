@@ -18,10 +18,3 @@
 作者擅长进销存、MES等管理软件开发，欢迎砸单
 QQ:[1262527107](http://wpa.qq.com/msgrd?v=3&uin=1262527107&site=qq&menu=yes)
 
-#### 微信名片
-
-![微信名片](https://images.gitee.com/uploads/images/2020/1127/161950_148d1624_299806.png "屏幕截图.png")
-
-#### 打赏
-感谢您对开源项目的支持
-![收款码](https://images.gitee.com/uploads/images/2020/1127/164510_a9502514_299806.png "屏幕截图.png")
