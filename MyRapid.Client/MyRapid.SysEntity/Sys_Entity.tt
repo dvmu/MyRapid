@@ -1,0 +1,90 @@
+﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+<#@ assembly name="System.Data" #> 
+<#@ assembly name="System.xml" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Data.SqlClient" #>
+<#@ import namespace="System.Data" #>
+<#@ output extension=".txt" #>
+/*******************************************************************************
+ * Copyright © 2010-2020  陈恩点版权所有
+ * 初版作者: 陈恩点
+ * Last Updated: <#=DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")#>
+ * 联系方式: 18115503914
+ * 简单描述: MyRapid快速开发框架
+*********************************************************************************/
+using System;
+namespace MyRapid.SysEntity
+{
+      <#
+           string connectionString = "data source=.;initial catalog=cbest;user id=sa;password=pass123!;";
+            SqlConnection conn = new SqlConnection(connectionString);
+            conn.Open();
+			string tableName = "Sys_Mail";
+            string strSql = @"SELECT A.NAME FieldName,CONVERT(BIT,A.COLSTAT) AutoIncrement, 
+PrimaryKey=CASE WHEN C.COLID=A.COLID THEN CONVERT(BIT,1) ELSE CONVERT(BIT,0) END,
+UniqueKey=CASE WHEN D.COLID=A.COLID THEN CONVERT(BIT,1) ELSE CONVERT(BIT,0) END,
+B.NAME SqlDbType,--A.PREC FieldSize,A.Scale ScaleSize,
+CASE B.NAME
+WHEN 'BigInt' THEN 'long' 
+WHEN 'Binary' THEN 'byte[]'
+WHEN 'Bit' THEN 'bool'
+WHEN 'Char' THEN 'string'
+WHEN 'DateTime' THEN 'DateTime'
+WHEN 'Decimal' THEN 'decimal'
+WHEN 'Float' THEN 'double'
+WHEN 'Image' THEN 'byte[]'
+WHEN 'Int' THEN 'int'
+WHEN 'Money' THEN 'decimal'
+WHEN 'NChar' THEN 'string'
+WHEN 'NText' THEN 'string'
+WHEN 'NVarChar' THEN 'string'
+WHEN 'Real' THEN 'float'
+WHEN 'UniqueIdentifier' THEN 'string'
+WHEN 'SmallDateTime' THEN 'DateTime'
+WHEN 'SmallInt' THEN 'byte'
+WHEN 'SmallMoney' THEN 'decimal'
+WHEN 'Text' THEN 'string'
+WHEN 'Timestamp' THEN 'long'
+WHEN 'TinyInt' THEN 'byte'
+WHEN 'VarBinary' THEN 'byte[]'
+WHEN 'VarChar' THEN 'string'
+WHEN 'Variant' THEN 'object'
+WHEN 'Xml' THEN 'string'
+WHEN 'Date' THEN 'DateTime'
+WHEN 'Time' THEN 'DateTime'
+WHEN 'DateTime2' THEN 'DateTime'
+WHEN 'DateTimeOffset' THEN 'DateTime'
+ELSE 'string' END NetType,
+CONVERT(BIT,A.ISNULLABLE) IsNullable,
+F.TEXT DefaultValue,CAST(ISNULL(E.VALUE,'') AS NVARCHAR(256)) MsDescription
+FROM SYSCOLUMNS A
+LEFT JOIN SYSTYPES B ON A.XTYPE =B.XTYPE AND B.STATUS =0
+LEFT JOIN SYSINDEXKEYS C ON C.ID =A.ID AND C.COLID = A.COLID AND C.INDID =1
+LEFT JOIN SYSINDEXKEYS D ON D.ID =A.ID AND D.COLID = A.COLID AND D.INDID =2
+LEFT OUTER JOIN  SYS.EXTENDED_PROPERTIES E 
+ON  E.MAJOR_ID =  A.ID AND   E.MINOR_ID =A.COLID    AND E.NAME = 'MS_DESCRIPTION'
+LEFT JOIN SYSCOMMENTS F ON A.CDEFAULT =F.ID
+LEFT JOIN SYSOBJECTS T ON A.ID = T.ID 
+WHERE T.NAME = '{0}'";
+			strSql = string.Format(strSql,tableName);
+            SqlCommand command = new SqlCommand(strSql, conn);
+            SqlDataAdapter ad = new SqlDataAdapter(command);
+            DataTable dt = new DataTable();
+            ad.Fill(dt);
+			#>
+            ///<summary>
+            ///表<#= tableName #>的实体类
+            ///</summary>
+			public class <#= tableName #>
+			{ 
+			<#
+            foreach (DataRow dr in dt.Rows) 
+            { #>
+            ///<summary> 
+            ///<#= dr["MsDescription"].ToString().Trim() #>
+            ///</summary>
+			public <#= dr["NetType"].ToString().Trim() #> <#= dr["FieldName"].ToString().Trim() #> {get;set;}
+           <# } 
+		    conn.Close(); #>
+    }
+}

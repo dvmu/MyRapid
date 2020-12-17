@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2A4E223-C6EA-48ED-A265-CA4D31F45B53}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyRapid.SystemManager</RootNamespace>
+    <AssemblyName>MyRapid.SystemManager</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\CBest\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\CBest\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Docs.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="SystemMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemMail.Designer.cs">
+      <DependentUpon>SystemMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemScript.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemScript.Designer.cs">
+      <DependentUpon>SystemScript.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemStep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemStep.Designer.cs">
+      <DependentUpon>SystemStep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConfiguration.Designer.cs">
+      <DependentUpon>SystemConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemConnection.Designer.cs">
+      <DependentUpon>SystemConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemExtend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemExtend.Designer.cs">
+      <DependentUpon>SystemExtend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemLog.Designer.cs">
+      <DependentUpon>SystemLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemProject.Designer.cs">
+      <DependentUpon>SystemProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPrototype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemPrototype.Designer.cs">
+      <DependentUpon>SystemPrototype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemSheet.Designer.cs">
+      <DependentUpon>SystemSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemDataBase.Designer.cs">
+      <DependentUpon>SystemDataBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemDictionary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemDictionary.Designer.cs">
+      <DependentUpon>SystemDictionary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemDocument.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemDocument.Designer.cs">
+      <DependentUpon>SystemDocument.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemLayout.Designer.cs">
+      <DependentUpon>SystemLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemHelp.Designer.cs">
+      <DependentUpon>SystemHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemMenu.designer.cs">
+      <DependentUpon>SystemMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemPopup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemPopup.Designer.cs">
+      <DependentUpon>SystemPopup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemIcon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemIcon.designer.cs">
+      <DependentUpon>SystemIcon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemReport.Designer.cs">
+      <DependentUpon>SystemReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemRoleMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemRoleMenu.Designer.cs">
+      <DependentUpon>SystemRoleMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemWorkSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemWorkSet.designer.cs">
+      <DependentUpon>SystemWorkSet.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyRapid.Base\MyRapid.Base.csproj">
+      <Project>{29261d53-5142-4a3a-af82-9427a099d052}</Project>
+      <Name>MyRapid.Base</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyRapid.Code\MyRapid.Code.csproj">
+      <Project>{6d0fece0-f42c-47c7-9761-a7ae95bcfec9}</Project>
+      <Name>MyRapid.Code</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyRapid.Proxy\MyRapid.Proxy.csproj">
+      <Project>{6536d6da-b513-4ed2-a680-80f3251951a8}</Project>
+      <Name>MyRapid.Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyRapid.SysEntity\MyRapid.SysEntity.csproj">
+      <Project>{baee478f-0283-416a-883d-3c9d00d8c706}</Project>
+      <Name>MyRapid.SysEntity</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="SystemMail.resx">
+      <DependentUpon>SystemMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemScript.resx">
+      <DependentUpon>SystemScript.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemStep.resx">
+      <DependentUpon>SystemStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConfiguration.resx">
+      <DependentUpon>SystemConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemConnection.resx">
+      <DependentUpon>SystemConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemExtend.resx">
+      <DependentUpon>SystemExtend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemLog.resx">
+      <DependentUpon>SystemLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemProject.resx">
+      <DependentUpon>SystemProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemPrototype.resx">
+      <DependentUpon>SystemPrototype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemSheet.resx">
+      <DependentUpon>SystemSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemDataBase.resx">
+      <DependentUpon>SystemDataBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemDictionary.resx">
+      <DependentUpon>SystemDictionary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemDocument.resx">
+      <DependentUpon>SystemDocument.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemLayout.resx">
+      <DependentUpon>SystemLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemHelp.resx">
+      <DependentUpon>SystemHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemMenu.resx">
+      <DependentUpon>SystemMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemPopup.resx">
+      <DependentUpon>SystemPopup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemIcon.resx">
+      <DependentUpon>SystemIcon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemReport.resx">
+      <DependentUpon>SystemReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemRoleMenu.resx">
+      <DependentUpon>SystemRoleMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemWorkSet.resx">
+      <DependentUpon>SystemWorkSet.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_DetectChanges="False" BuildVersion_UseUniversalClock="False" BuildVersion_UseGlobalSettings="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="YearStamp.MonthStamp.DayStamp.Increment" BuildVersion_StartDate="2012/1/1" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

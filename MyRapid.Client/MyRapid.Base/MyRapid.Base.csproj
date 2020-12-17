@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29261D53-5142-4A3A-AF82-9427A099D052}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MyRapid.Base</RootNamespace>
+    <AssemblyName>MyRapid.Base</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\CBest\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\CBest\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v19.2" />
+    <Reference Include="DevExpress.Data.v19.2" />
+    <Reference Include="DevExpress.DataAccess.v19.2.UI, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Diagram.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Docs.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Export, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core" />
+    <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDiagram.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraNavBar.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v19.2.Extensions, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Images.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v19.2.Core, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpreadsheet.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraTreeList.v19.2, Version=19.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MyRapid.Images, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\CBest\MyRapid.Images.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Box\BarItemEx.cs" />
+    <Compile Include="Box\TextPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\TextPage.Designer.cs">
+      <DependentUpon>TextPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildPage\InitializeBind.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildPage\InitializeGroupPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildPage\InitializeLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildPage\InitializeTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildPage\InitializeTree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\DashBoard.Designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box\FieldEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\FieldEdit.Designer.cs">
+      <DependentUpon>FieldEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box\PhrasePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\PhrasePage.Designer.cs">
+      <DependentUpon>PhrasePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box\GridPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\GridPicker.Designer.cs">
+      <DependentUpon>GridPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box\ImagePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\ImagePicker.designer.cs">
+      <DependentUpon>ImagePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildPage\ChildPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildPage\ChildPage.Designer.cs">
+      <DependentUpon>ChildPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChildPage\InitializeGridControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChildPage\InitializeRepositoryItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box\MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\MainPage.designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box\Program.cs" />
+    <Compile Include="Edit\CodeEdit\SqlEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\CodeEdit\SqlEdit.Designer.cs">
+      <DependentUpon>SqlEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Column\GridLayout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Edit\Column\GridLayout.Designer.cs">
+      <DependentUpon>GridLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Column\GridLayoutBuilder.cs" />
+    <Compile Include="Edit\Column\GridLayoutBuilderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\Column\GridLayoutBuilderUI.Designer.cs">
+      <DependentUpon>GridLayoutBuilderUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Extend\ButtonItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Edit\Extend\ButtonLayout.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\Extend\ButtonLayout.Designer.cs">
+      <DependentUpon>ButtonLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Layout\Layout.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Edit\Layout\Layout.Designer.cs">
+      <DependentUpon>Layout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Layout\LayoutBuilder.cs" />
+    <Compile Include="Edit\Layout\LayoutBuilderUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit\Layout\LayoutBuilderUI.Designer.cs">
+      <DependentUpon>LayoutBuilderUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\Pagination\Pagination.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Edit\Pagination\Pagination.Designer.cs">
+      <DependentUpon>Pagination.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit\TabEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Box\ScriptPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\ScriptPage.Designer.cs">
+      <DependentUpon>ScriptPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box\SharedFunc.cs" />
+    <Compile Include="Box\SkinPicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\SkinPicker.Designer.cs">
+      <DependentUpon>SkinPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Box\TreePicker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Box\TreePicker.Designer.cs">
+      <DependentUpon>TreePicker.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Box\DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\FieldEdit.resx">
+      <DependentUpon>FieldEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\PhrasePage.resx">
+      <DependentUpon>PhrasePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\GridPicker.resx">
+      <DependentUpon>GridPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\ImagePicker.resx">
+      <DependentUpon>ImagePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\TextPage.resx">
+      <DependentUpon>TextPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChildPage\ChildPage.resx">
+      <DependentUpon>ChildPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Edit\CodeEdit\SqlEdit.resx">
+      <DependentUpon>SqlEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Column\GridLayoutBuilderUI.resx">
+      <DependentUpon>GridLayoutBuilderUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Extend\ButtonLayout.resx">
+      <DependentUpon>ButtonLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Layout\LayoutBuilderUI.resx">
+      <DependentUpon>LayoutBuilderUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit\Pagination\Pagination.resx">
+      <DependentUpon>Pagination.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Box\ScriptPage.resx">
+      <DependentUpon>ScriptPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\SkinPicker.resx">
+      <DependentUpon>SkinPicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Box\TreePicker.resx">
+      <DependentUpon>TreePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyRapid.Code\MyRapid.Code.csproj">
+      <Project>{6d0fece0-f42c-47c7-9761-a7ae95bcfec9}</Project>
+      <Name>MyRapid.Code</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyRapid.GlobalLocalizer\MyRapid.GlobalLocalizer.csproj">
+      <Project>{6B64BFBB-6AA5-45E1-9E51-17F4BD85CBF4}</Project>
+      <Name>MyRapid.GlobalLocalizer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyRapid.Proxy\MyRapid.Proxy.csproj">
+      <Project>{6536d6da-b513-4ed2-a680-80f3251951a8}</Project>
+      <Name>MyRapid.Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyRapid.SysEntity\MyRapid.SysEntity.csproj">
+      <Project>{baee478f-0283-416a-883d-3c9d00d8c706}</Project>
+      <Name>MyRapid.SysEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ScintillaNET\ScintillaNET.csproj">
+      <Project>{22ae2386-60f1-476e-9303-61cdb0aac4cf}</Project>
+      <Name>ScintillaNET</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_DetectChanges="False" BuildVersion_UseUniversalClock="False" BuildVersion_UseGlobalSettings="True" BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="YearStamp.MonthStamp.DayStamp.Increment" BuildVersion_StartDate="2012/1/1" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

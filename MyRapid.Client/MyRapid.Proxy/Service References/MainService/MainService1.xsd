@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MyRapid.Server" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MyRapid.Server" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfMyParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MyParameter" nillable="true" type="tns:MyParameter" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMyParameter" nillable="true" type="tns:ArrayOfMyParameter" />
+  <xs:complexType name="MyParameter">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="Value" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MyParameter" nillable="true" type="tns:MyParameter" />
+</xs:schema>
